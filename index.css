@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 136, 0);
+    overflow-x: hidden;
+}
+
+
+.logo {
+    height: 40px;
+    padding-top: 2em;
+
+}
+
+.logo img {
+    margin-left: 20em;
+
+}
+
+
+
+ul li {
+    display: inline-block;
+    padding-top: 2.5em;
+
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+    font-size: 0.8em;
+
+}
+
+.hsus {
+    background-color: black;
+    padding-bottom: 1.5em;
+}
+
+#imaginih {
+    position: relative;
+
+}
+
+#m6 {
+    position: absolute;
+    top: 14em;
+    left: 16.5%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.furnizor {
+    padding-top: 20em;
+    padding-left: 15em;
+    z-index: 2;
+    position: relative;
+}
+
+.pozanene {
+    position: relative;
+    padding-top: 20em;
+    
+    z-index: 2;
+    
+}
+
+#dude {
+    position: absolute;
+    top: 6.9em;
+    left: 1.9em;
+}
+
+#head1 {
+    position: absolute;
+    top: 5.84em;
+    left: 6.87em;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+#fur {
+    color: white;
+    background-color: black;
+    padding-bottom: 0.1em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: clamp(1.5rem, 2.7vw, 4rem);
+    
+}
+
+#tau {
+    
+    background-color: black;
+    font-size: clamp(1.5rem, 2.7vw, 4rem);
+    color:rgb(255, 136, 0);
+    padding-bottom: 0.1em;
+    padding-right: 0.4em;
+    margin-left: -0.4em;
+}
+
+#demat {
+    background-color: white;
+    color:black;
+    font-size: clamp(1.1rem, 1.76vw, 3rem);
+    padding-top: 0.1em;
+    padding-bottom: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    position: relative;
+    top: -0.5em;
+}
+
+.gritransp {
+    position: relative;
+    width: 100%;
+    height: 12em;
+    background-color: black;
+    top: 20em;
+    opacity: 0.5;
+}
+
+body {
+    width: 100%;
+}
+
+/* Dan */
+
+.dan-header {
+    background:#000;
+    height:100px;
+    color: #FFF;
+    padding: 0 10%;
+    display:flex;
+    align-items:center;
+}
+
+.dan-header .row {
+    flex:1;
+}
+
+.dan-header .row>div:last-child {
+    text-align:right;
+}
+
+.dan-header .row>div:last-child ul {
+    padding:0;
+    margin:0;
+}
+
+.dan-header .row>div:last-child ul li {
+    padding-top:0;
+}
+
+@media all and (max-width:700px) {
+    
+    .dan-header .row>div {
+        text-align:center;
+    }
+}
+
