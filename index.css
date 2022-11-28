@@ -7,25 +7,38 @@ body {
     overflow-x: hidden;
 }
 
+/* Dan */
 
-.logo {
-    height: 40px;
-    padding-top: 2em;
-
+.dan-header {
+    background:#000;
+    height:100px;
+    color: #FFF;
+    padding: 0 10%;
+    display:flex;
+    align-items:center;
 }
 
-.logo img {
-    margin-left: 20em;
-
+.dan-header .row {
+    flex:1;
 }
 
+.dan-header .row>div:last-child {
+    text-align:right;
+}
+
+
+@media all and (max-width:700px) {
+    
+    .dan-header .row>div {
+        text-align:center;
+    }
+}
+
+/* Dan up */
 
 
 ul li {
     display: inline-block;
-    padding-top: 2.5em;
-
-
 }
 
 ul li a {
@@ -33,17 +46,6 @@ ul li a {
     color: white;
     margin-right: 1em;
     font-size: 0.8em;
-
-}
-
-.hsus {
-    background-color: black;
-    padding-bottom: 1.5em;
-}
-
-#imaginih {
-    position: relative;
-
 }
 
 #m6 {
@@ -65,9 +67,7 @@ ul li a {
 .pozanene {
     position: relative;
     padding-top: 20em;
-    
     z-index: 2;
-    
 }
 
 #dude {
@@ -75,6 +75,8 @@ ul li a {
     top: 6.9em;
     left: 1.9em;
 }
+
+/*textul cu Furnizor*/
 
 #head1 {
     position: absolute;
@@ -94,8 +96,7 @@ ul li a {
 }
 
 #tau {
-    
-    background-color: black;
+     background-color: black;
     font-size: clamp(1.5rem, 2.7vw, 4rem);
     color:rgb(255, 136, 0);
     padding-bottom: 0.1em;
@@ -115,6 +116,8 @@ ul li a {
     top: -0.5em;
 }
 
+/*textul cu Furnizor*/
+
 .gritransp {
     position: relative;
     width: 100%;
@@ -126,40 +129,5 @@ ul li a {
 
 body {
     width: 100%;
-}
-
-/* Dan */
-
-.dan-header {
-    background:#000;
-    height:100px;
-    color: #FFF;
-    padding: 0 10%;
-    display:flex;
-    align-items:center;
-}
-
-.dan-header .row {
-    flex:1;
-}
-
-.dan-header .row>div:last-child {
-    text-align:right;
-}
-
-.dan-header .row>div:last-child ul {
-    padding:0;
-    margin:0;
-}
-
-.dan-header .row>div:last-child ul li {
-    padding-top:0;
-}
-
-@media all and (max-width:700px) {
-    
-    .dan-header .row>div {
-        text-align:center;
-    }
 }
 
