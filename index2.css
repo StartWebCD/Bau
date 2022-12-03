@@ -320,12 +320,36 @@ ul li a {
 }
 
 .butoncatalog {
-    
+    display: flex;
     z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#catatext {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    padding: 20px 35px;
+}
+
+
+#catabuton {
+     font-size: 1em;
+    border: none;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-left: 35%;
+    
+}
+
+#cataorange {
+    color: rgb(255, 136, 0);
+    margin-left: 10px;
 }
 
 .noutati {
-    background: rgb(126, 126, 26);
+    background: black;
     height: 175px;
     padding: 0 10%;
     display: flex;
@@ -338,36 +362,73 @@ ul li a {
 }
 
 .textnoutati {
-    background: rgba(30, 255, 0, 0.452);
     z-index: 1;
+    position: relative;
+}
+
+#noualb {
+    position: relative;
+    color: white;
+    font-size: 2em;
+    line-height: 0.8;
+    top: 40%;
+    font-weight: bold;
+    
+}
+
+#nouport {
+    color: rgb(255, 136, 0);
+    font-size: 0.5em;
+    font-weight: normal;
+}
+
+#noub {
+    font-weight: bold;
+    margin-left: 8px;
 }
 
 .nou1 {
-    background: yellowgreen;
-    height: 350px;
+    background: black;
+    height: 600px;
     padding: 0 10%;
     display: flex;
     align-items: center;
+    
 }
 
 .nou1 .row {
     flex: 1;
-    height: 350px;
+    height: 600px;
+    
 }
 
 .pozanou1 {
-    background: rebeccapurple;
+    background: url(2poze/Pozanou.png);
+    background-size: 98% 82%;
+    background-repeat: no-repeat;
     z-index: 1;
+    
 }
 
 .pozanou2 {
-    background: rgb(150, 129, 170);
+    background: url(2poze/Pozanou.png);
+    background-size: 98% 82%;
+    background-repeat: no-repeat;
     z-index: 1;
 }
 
+@media all and (max-width:700px) {
+    .nou1 .row {
+        height: 800px;
+    }
+    .nou1 {
+        height: 800px;
+    }
+}
+
 .articol {
-    background: burlywood;
-    height: 350px;
+    background: black;
+    height: 500px;
     padding: 0 10%;
     display: flex;
     align-items: center;
@@ -375,22 +436,79 @@ ul li a {
 
 .articol .row {
     flex: 1;
-    height: 350px;
+    height: 500px;
 }
 
 .art1 {
-    background: rgb(53, 51, 48);
-    z-index: 1;
+     z-index: 1;
 }
 
 .art2 {
-    background: rgb(41, 33, 24);
-    z-index: 1;
+   z-index: 1;
+}
+
+.titluart {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.contart {
+    font-size: 0.5em;
+    font-weight: normal;
+    line-height: 0.5;
+    
+}
+
+.dataart {
+    font-size: 0.7em;
+    font-weight: normal;
+    color: rgb(255, 136, 0);
+}
+
+.butart {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-size: 0.5em;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+
+@media all and (max-width:700px) {
+    .articol {
+         height: 1400px;
+       
+    }
+      .articol .row { 
+        height: 1400px;
+    }
+}
+
+@media all and (min-width:700px) and (max-width:1000px) {
+    .articol {
+         height: 1090px;
+       
+    }
+      .articol .row { 
+        height: 1090px;
+    }
+}
+
+@media all and (min-width:1000px) and (max-width:1470px) {
+    .articol {
+         height: 700px;
+       
+    }
+      .articol .row { 
+        height: 700px;
+    }
 }
 
 .parteneri {
-    background: rgb(168, 58, 38);
-    height: 175px;
+    background: black;
+    height: 100px;
     padding: 0 10%;
     display: flex;
     align-items: center;
@@ -398,17 +516,40 @@ ul li a {
 
 .parteneri .row {
     flex: 1;
-    height: 175px;
+    height: 100px;
 }
 
 .textparteneri {
-    background: rgb(67, 134, 109);
     z-index: 1;
 }
 
+#partalb {
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    line-height: 0.8;
+    font-weight: normal;
+    margin-top: 20px;;
+}
+
+#livram {
+    font-size: 0.5em;
+    color: rgb(255, 136, 0);
+}
+
+@media all and (max-width:700px) {
+    .parteneri {
+         height: 140px;
+       
+    }
+      .parteneri .row { 
+        height: 140px;
+    }
+}
+
 .materiale {
-    background: plum;
-    padding: 0 10%;
+    background: black;
+    padding: 0 6.8%;
     height: 175px;
     display: flex;
     align-items: center;
@@ -420,13 +561,24 @@ ul li a {
 }
 
 .mat1 {
-    background: purple;
+    background: url(6maxbau/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 1;
-    border: 1px solid;
+    margin-bottom: 7px;
+}
+
+@media all and (max-width:700px) {
+    .materiale {
+        height: 310px;
+    }
+    .materiale .row {
+        height: 310px;
+    }
 }
 
 .maps {
-    background: wheat;
+    background: black;
     padding: 0 10%;
     height: 300px;
     display: flex;
@@ -439,18 +591,74 @@ ul li a {
 }
 
 .map1 {
-    background: rgb(82, 79, 74);
+    background: black;
     z-index: 1;
 }
 
 .map2 {
-    background: rgb(238, 158, 39);
+    background: black;
     z-index: 1;
 }
 
 .map3 {
-    background: rgb(107, 33, 156);
+    background: black;
     z-index: 1;
+}
+
+#mapsmat {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#mapslore {
+    font-weight: normal;
+    font-size: 0.7em;
+}
+
+#mapstel {
+    color: rgb(255, 136, 0);
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#harta {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#sitemap {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+
+#sitemap>ul {
+    font-size: 0.7em;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sitemap>ul>li {
+    display: block;
+}
+
+#locatie {
+    background: url(maps/harta.png);
+    height: 175px;
+}
+
+@media all and (max-width:700px) {
+    .maps {   
+        height: 800px;
+    }
+    .maps .row {
+        height: 800px;
+    }
 }
 
 .footer {
@@ -467,8 +675,11 @@ ul li a {
 }
 
 .picior {
-    background: cornflowerblue;
     z-index: 1;
+}
+
+#footext {
+    color: rgb(255, 136, 0);
 }
 
 @media all and (max-width:700px) {
