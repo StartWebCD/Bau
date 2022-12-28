@@ -232,11 +232,11 @@ ul li a {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 1%;
+    left: 0;
     background: rgb(48, 46, 46);
     color: white;
     font-size: 1.5em;
-    width: 98.1%;
+    width: auto;
     text-align: center;   
 }
 
@@ -263,7 +263,7 @@ ul li a {
     position: relative;
     background: url(3poze/nenepix.png);
     background-repeat: no-repeat;
-    background-size: 98% 82%;
+    background-size: cover;
     background-position: bottom;
     z-index: 1;
     cursor: pointer;
@@ -273,7 +273,7 @@ ul li a {
     position: relative;
     background: url(3poze/bormasina.png);
     background-repeat: no-repeat;
-    background-size: 98% 82%;
+    background-size: cover;
     background-position: bottom;
     z-index: 1;
     cursor: pointer;
@@ -283,7 +283,7 @@ ul li a {
     position: relative;
     background: url(3poze/stivuitor.png);
     background-repeat: no-repeat;
-    background-size: 98% 82%;
+    background-size: cover;
     background-position: bottom;
     z-index: 1;
     cursor: pointer;
