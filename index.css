@@ -9,28 +9,29 @@ body {
 /* Dan */
 
 .dan-header {
-    background:#000;
-    height:100px;
+    background: #000;
+    height: 100px;
     color: #FFF;
     padding: 0 10%;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 }
 
 .dan-header .row {
-    flex:1;
+    flex: 1;
 }
 
 .dan-header .row>div:last-child {
-    text-align:right;
+    text-align: right;
 }
 
 
 @media all and (max-width:700px) {
-    
+
     .dan-header .row>div {
-        text-align:center;
+        text-align: center;
     }
+
     ul li {
         font-size: 0.8em;
     }
@@ -46,15 +47,15 @@ ul li a {
     text-decoration: none;
     color: white;
     margin-right: 1em;
-    
+
 }
 
 .subheader {
-    background:rgb(255, 136, 0);
+    background: rgb(255, 136, 0);
     height: 700px;
     padding: 0 10%;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -71,7 +72,7 @@ ul li a {
     position: absolute;
     top: 4.1em;
     font-size: clamp(1.7rem, 2.5vw, 3rem);
-    
+
 }
 
 #fur {
@@ -81,13 +82,13 @@ ul li a {
     padding-left: 0.4em;
     padding-right: 0.4em;
     font-size: clamp(1.7rem, 3.2vw, 4rem);
-    
+
 }
 
 #tau {
-     background-color: black;
+    background-color: black;
     font-size: clamp(1.7rem, 3.2vw, 4rem);
-    color:rgb(255, 136, 0);
+    color: rgb(255, 136, 0);
     padding-bottom: 0.1em;
     padding-right: 0.4em;
     margin-left: -0.4em;
@@ -95,7 +96,7 @@ ul li a {
 
 #demat {
     background-color: white;
-    color:black;
+    color: black;
     font-size: clamp(1.3rem, 2.2vw, 3rem);
     padding-top: -0.2em;
     padding-bottom: 0.3em;
@@ -111,32 +112,36 @@ ul li a {
 }
 
 @media all and (max-width:700px) {
-    
+
     .furnizor>div {
-        text-align:center;
-        }
+        text-align: center;
+    }
+
     #head1 {
         top: 2.5em;
-    } 
+    }
+
     #telefon {
         top: 10.3em;
     }
+
     ul li {
         margin-top: 10px;
     }
-   
-   
+
+
 }
 
 @media all and (max-width:990px) {
-    
+
     #head1 {
         top: 2em;
-    } 
-  #fundalgri {
-    top: 9.5em;
-  }
-  
+    }
+
+    #fundalgri {
+        top: 9.5em;
+    }
+
 }
 
 #telefon {
@@ -149,7 +154,7 @@ ul li a {
 #bla {
     color: white;
     font-size: clamp(1rem, 0.9vw, 4rem);
-    
+
 }
 
 #numar {
@@ -185,12 +190,14 @@ ul li a {
     }
 }
 
-.pozele {
+/*.pozele {
     background:black;
-    height: 500px;
+    height: 450px;
     padding: 0 10%;
+    padding-top: 5%;
     display: flex;
-    align-items: center;    
+    align-items: center;
+     
 }
 
 @media all and (max-width:700px) {
@@ -204,11 +211,13 @@ ul li a {
 
 .pozele .row {
     flex: 1;
+    gap: 10px;
 }
 
 @media all and (min-width:700px) {
     .pozele>div>div {
-        height: 450px;  
+        height: 450px; 
+        width: 450px; 
        }
     .pozele {
         height: auto;      
@@ -218,7 +227,7 @@ ul li a {
 @media all and (min-width:700px) and (max-width:1000px) {
     .pozele>div>div {
         height: 450px; 
-        width: 500px; 
+        width: 450px; 
        }
     .pozele {
         height: auto;  
@@ -287,7 +296,137 @@ ul li a {
     background-position: bottom;
     z-index: 1;
     cursor: pointer;
-} 
+}*/
+
+/*OpenAI*/
+
+@media (max-width: 300px) {
+    .child {
+        flex-basis: 100%;
+        height: auto;
+    }
+}
+
+.pozele {
+    background: black;
+    height: 450px;
+    min-width: 300px;
+    padding: 0 10%;
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media all and (max-width:700px) {
+    .pozele {
+        height: 900px;
+    }
+
+    .pozele>div>div {
+        height: 300px;
+    }
+}
+
+.pozele .row {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.pozele>div>div {
+    margin: 0 auto;
+}
+
+@media all and (min-width:700px) {
+    .pozele>div>div {
+        height: 450px;
+        width: 450px;
+    }
+
+    .pozele {
+        height: auto;
+    }
+}
+
+@media all and (min-width:700px) and (max-width:1000px) {
+    .pozele>div>div {
+        height: 450px;
+        width: 450px;
+    }
+
+    .pozele {
+        height: auto;
+    }
+
+    .pozele .row {
+        justify-content: center;
+    }
+}
+
+.calitate {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(48, 46, 46);
+    color: white;
+    font-size: 1.5em;
+    width: auto;
+    text-align: center;
+}
+
+.poza1:hover .calitate {
+    background: rgb(255, 136, 0);
+}
+
+.poza2:hover .calitate {
+    background: rgb(255, 136, 0);
+}
+
+.poza3:hover .calitate {
+    background: rgb(255, 136, 0);
+}
+
+.calitate>p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.poza1 {
+    position: relative;
+    background: url(3poze/nenepix.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.poza2 {
+    position: relative;
+    background: url(3poze/bormasina.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.poza3 {
+    position: relative;
+    background: url(3poze/stivuitor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/*OpenAI*/
 
 .cuvinte {
     background: black;
@@ -298,7 +437,7 @@ ul li a {
 }
 
 .cuvinte .row {
-     flex: 1;
+    flex: 1;
 }
 
 .textcuvinte {
@@ -318,19 +457,19 @@ ul li a {
 
 @media all and (max-width:1100px) {
     .cuvinte {
-    height: 500px;
+        height: 500px;
     }
 }
 
 @media all and (max-width:800px) {
-    
+
     .cuvinte {
-     height: 700px;
-     }
- }
+        height: 700px;
+    }
+}
 
 .catalog {
-    background: linear-gradient(rgba(255, 136, 0, 0.5), rgba(255, 136, 0,0.5)), url(Pozacatalog/Catalog.png);
+    background: linear-gradient(rgba(255, 136, 0, 0.5), rgba(255, 136, 0, 0.5)), url(Pozacatalog/Catalog.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
@@ -360,12 +499,12 @@ ul li a {
 
 
 #catabuton {
-     font-size: 1em;
+    font-size: 1em;
     border: none;
     font-weight: bold;
     padding: 10px 30px;
     margin-left: 35%;
-    
+
 }
 
 #cataorange {
@@ -398,7 +537,7 @@ ul li a {
     line-height: 0.8;
     top: 40%;
     font-weight: bold;
-    
+
 }
 
 #nouport {
@@ -418,26 +557,26 @@ ul li a {
     padding: 0 10%;
     display: flex;
     align-items: center;
-    
+
 }
 
 .nou1 .row {
     flex: 1;
     height: 600px;
-    
+
 }
 
 .pozanou1 {
     background: url(2poze/Pozanou.png);
-    background-size: 98% 82%;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
-    
+
 }
 
 .pozanou2 {
     background: url(2poze/Pozanou.png);
-    background-size: 98% 82%;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
 }
@@ -446,6 +585,7 @@ ul li a {
     .nou1 .row {
         height: 800px;
     }
+
     .nou1 {
         height: 800px;
     }
@@ -465,11 +605,11 @@ ul li a {
 }
 
 .art1 {
-     z-index: 1;
+    z-index: 1;
 }
 
 .art2 {
-   z-index: 1;
+    z-index: 1;
 }
 
 .titluart {
@@ -483,7 +623,7 @@ ul li a {
     font-size: 0.5em;
     font-weight: normal;
     line-height: 0.5;
-    
+
 }
 
 .dataart {
@@ -503,30 +643,33 @@ ul li a {
 
 @media all and (max-width:700px) {
     .articol {
-         height: 1400px;
-       
+        height: 1400px;
+
     }
-      .articol .row { 
+
+    .articol .row {
         height: 1400px;
     }
 }
 
 @media all and (min-width:700px) and (max-width:1000px) {
     .articol {
-         height: 1090px;
-       
+        height: 1090px;
+
     }
-      .articol .row { 
+
+    .articol .row {
         height: 1090px;
     }
 }
 
 @media all and (min-width:1000px) and (max-width:1470px) {
     .articol {
-         height: 700px;
-       
+        height: 700px;
+
     }
-      .articol .row { 
+
+    .articol .row {
         height: 700px;
     }
 }
@@ -554,7 +697,8 @@ ul li a {
     font-size: 2em;
     line-height: 0.8;
     font-weight: normal;
-    margin-top: 20px;;
+    margin-top: 20px;
+    ;
 }
 
 #livram {
@@ -564,10 +708,11 @@ ul li a {
 
 @media all and (max-width:700px) {
     .parteneri {
-         height: 140px;
-       
+        height: 140px;
+
     }
-      .parteneri .row { 
+
+    .parteneri .row {
         height: 140px;
     }
 }
@@ -597,10 +742,11 @@ ul li a {
     .materiale {
         height: 510px;
     }
+
     .materiale .row {
         height: 510px;
     }
-    
+
 }
 
 .maps {
@@ -679,18 +825,20 @@ ul li a {
 }
 
 @media all and (max-width:1000px) {
-    .maps {   
+    .maps {
         height: 800px;
     }
+
     .maps .row {
         height: 800px;
     }
 }
 
 @media all and (min-width:1000px) and (max-width:1600px) {
-    .maps {   
+    .maps {
         height: 400px;
     }
+
     .maps .row {
         height: 400px;
     }
@@ -718,22 +866,8 @@ ul li a {
 }
 
 @media all and (max-width:700px) {
-    
+
     .footer .row>div {
-        text-align:center;
+        text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
