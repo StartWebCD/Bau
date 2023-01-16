@@ -301,7 +301,7 @@ ul li a {
 /*OpenAI*/
 
 @media (max-width: 300px) {
-    .child {
+    .pozele .row {
         flex-basis: 100%;
         height: auto;
     }
@@ -317,6 +317,16 @@ ul li a {
     flex-wrap: wrap;
     align-items: center;
 }
+
+/*@media all and (max-width:700px) {
+    .pozele {
+        height: 900px;
+    }
+
+    .pozele>div>div {
+        height: 300px;
+    }
+}*/
 
 @media all and (max-width:700px) {
     .pozele {
