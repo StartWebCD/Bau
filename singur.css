@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.hunu {
+    color: rgb(133, 50, 50);
+    color: white;
+    line-height: 70px;
+    padding-left: 10px;
+}
+
+.tot {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background: rgb(75, 73, 73);
+    padding: 0 15%;
+}
+
+.listau {
+    display: flex;
+}
+
+.alista {
+    padding: 0 20px;
+    color:white;
+    line-height: 70px;
+    font-size: 20px;
+    height: 100%;
+}
+
+
+.lista:hover {
+    cursor: pointer;
+    background-color: coral;
+}
+
+@media (max-width: 675px) {
+    .listau {
+        display: grid;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: gray;
+        top: 70px;
+        z-index: -1;
+        transition: .6s;
+        transform: translateY(-100%);
+    }
+
+    .lista {
+        padding-left: 60px;
+    }
+
+    .inchis {
+        display: grid;
+        height: min-content;
+        margin: 18px -50px 0 0;
+        cursor: pointer;
+    }
+
+    .bara {
+        width: 40px;
+        height: 5px;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    input:checked~ .tot .listau {
+        transform: translateY(0);
+    }
+
+    input:checked~ .tot .inchis {
+        margin-top: 35px;
+    }
+
+    input:checked~ .tot .bara:nth-child(1) {
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    input:checked~ .tot .bara:nth-child(2) {
+        display: none;
+    }
+
+    input:checked~ .tot .bara:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}
+
+input {
+    display: none;
+}
+
+
+
+
+
